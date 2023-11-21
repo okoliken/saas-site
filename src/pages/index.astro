@@ -1,0 +1,398 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import Button from "../components/Button.astro";
+import Thunder from "../components/icons/thunder.astro";
+import Faq from "../components/Faq.vue";
+
+import Testimonials from "../components/Testimonials.vue";
+import CustomersSay from "../components/CustomersSay.vue";
+import BrandIcon from "../assets/landing_page/Add.png";
+import Frame from "../assets/landing_page/frame.png";
+import Create from "../assets/landing_page/create.svg";
+import Anna from "../assets/landing_page/anna.svg";
+import Template from "../assets/landing_page/template.svg";
+import Group from "../assets/landing_page/group.png";
+import Play from "../assets/landing_page/play.png";
+import HeadSet from "../assets/landing_page/headset.png";
+import Timer from "../assets/landing_page/timer.png";
+import Tv from "../assets/landing_page/tv.png";
+import Dashboard from "../assets/landing_page/dashboard-min.png";
+import Pattern from "../assets/landing_page/pattern-min.png";
+import Avatar from "../assets/landing_page/avatar-group.png";
+// @ts-ignore
+import { Image } from "astro:assets";
+---
+
+<SiteLayout title="Home Page">
+  <div class="hero-banner py-14 lg:py-0 lg:min-h-screen h-full">
+    <div class="container mx-auto lg:mt-16 flex items-center flex-col gap-y-5">
+      <h1
+        class="text-4xl lg:text-[67.529px] text-center font-semibold leading-[135%]"
+      >
+        Start Your Website <br class="hidden lg:block" /> Development Agency Using A.I
+      </h1>
+
+      <p
+        class="text-gray-25 text-center text-md lg:text-[25px] leading-[167%] capitalize font-light"
+      >
+        drag-n-drop website builder helps you create local business & <br class="hidden lg:block" />
+         proffesional websites using just a keyword!
+      </p>
+
+      <Button
+        class="w-[246px] mt-12 smart-blok__btn h-[62px] flex items-center justify-center gap-x-3"
+      >
+        <Thunder />
+        <span>Build Your Website</span>
+      </Button>
+
+      <div class="w-full max-w-[782px] lg:mt-20">
+        <div class="flex items-center gap-x-6 smart-blok-search p-3">
+          <Image class="w-[100px] h-[91px]" src={BrandIcon} alt="Brand Icon" />
+          <input
+            class="px-6 lg:px-10 w-full"
+            type="text"
+            placeholder="What type of website do you want to create?"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="flex items-center justify-center flex-col container mx-auto">
+      <div class="w-full max-w-[897px] mt-14 min-h-[113px] publicity"></div>
+
+      <div
+        class="meet-anna w-full max-w-[1396px] min-h-[544px] my-10 px-12 lg:px-24 py-12 flex lg:flex-row items-center flex-col lg:justify-between"
+      >
+        <div class="mb-7 lg:mb-0">
+          <h2
+            class="text-4xl lg:text-[42px] leading-7 lg:leading-[157%] text-center lg:text-justify"
+          >
+            <p class="lg:text-[56.524px]">
+              Meet <span class="first-cha">A</span>
+              <span class="second-cha">nna</span>
+            </p>
+             your artificial intelligent <br /> website assistant
+          </h2>
+
+          <Button
+            class="w-[267.366px] mt-12 h-[73.756px] text-[#CCC] flex items-center justify-center gap-x-4 border-gradient"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="23"
+              viewBox="0 0 18 23"
+              fill="none"
+            >
+              <path
+                d="M17.9078 7.4551C17.8237 7.26164 17.687 7.09562 17.5134 6.97585C17.3397 6.85607 17.1359 6.78734 16.9252 6.77742H11.7523L13.1867 1.42378C13.2324 1.25625 13.2388 1.08045 13.2055 0.910029C13.1722 0.739607 13.1001 0.579159 12.9947 0.441152C12.8895 0.304471 12.7543 0.193704 12.5997 0.117348C12.445 0.0409928 12.2749 0.00107701 12.1024 0.000662406H4.1962C3.94121 -0.00807197 3.69078 0.0697851 3.48568 0.221553C3.28059 0.373321 3.13293 0.590058 3.06674 0.836463L0.0397897 12.1311C-0.00589448 12.2986 -0.0123366 12.4744 0.0209641 12.6448C0.0542648 12.8152 0.126411 12.9757 0.231797 13.1137C0.338176 13.2519 0.475113 13.3636 0.631876 13.44C0.78864 13.5164 0.960971 13.5555 1.13537 13.5542H5.50638L3.46205 21.1667C3.39507 21.4122 3.41294 21.6731 3.51277 21.9072C3.61259 22.1412 3.78853 22.3347 4.01205 22.4563C4.23558 22.5778 4.49361 22.6204 4.74433 22.577C4.99505 22.5336 5.22377 22.4068 5.39343 22.2171L17.7045 8.66362C17.8511 8.5031 17.9483 8.3037 17.9844 8.08933C18.0204 7.87496 17.9938 7.65474 17.9078 7.4551ZM6.85043 17.2588L8.05895 12.741C8.10464 12.5734 8.11108 12.3976 8.07778 12.2272C8.04448 12.0568 7.97233 11.8963 7.86695 11.7583C7.76173 11.6217 7.6266 11.5109 7.47193 11.4345C7.31726 11.3582 7.14716 11.3183 6.97467 11.3178H2.63755L5.05459 2.25958H10.6228L9.18841 7.61322C9.14236 7.78383 9.13699 7.96287 9.17272 8.13594C9.20845 8.309 9.2843 8.47127 9.39415 8.60969C9.50401 8.74811 9.64482 8.85883 9.80525 8.93293C9.96568 9.00703 10.1413 9.04245 10.3179 9.03634H14.35L6.85043 17.2588Z"
+                fill="white"></path>
+            </svg>
+            <span>See Anna In Action</span>
+          </Button>
+        </div>
+        <div class="linear-shade">
+          <Image
+            class="w-full max-w-xs lg:w-[500px] lg:max-w-full lg:min-h-[500px]"
+            src={Frame}
+            alt="frame"
+          />
+        </div>
+      </div>
+      <div
+        class="steps w-full max-w-[1396px] min-h-[544px] my-10 px-12 lg:px-24 py-12 flex items-center justify-center flex-col gap-y-6"
+      >
+        <div class="flex items-center justify-center flex-col py-6 lg:py-3">
+          <div
+            class="rounded-[192.033px] w-full h-full max-w-xs min-h-[55px] lg:min-w-[358.142px] lg:min-h-[70.362px] light-bg-primary flex items-center justify-center mb-5"
+          >
+            <h4 class="text-center text-md lg:text-[15px] text-primary">
+              In Just 3 Simple Steps
+            </h4>
+          </div>
+
+          <p
+            class="text-4xl lg:text-[55px] text-center font-bold lg:leading-[144%]"
+          >
+            You Can Now Create Beautiful <br /> Websites Using A.I
+          </p>
+        </div>
+
+        <div class="my-8 lg:my-12">
+          <div
+            class="flex items-center flex-col lg:flex-row gap-y-6 lg:gap-y-0 gap-x-12 justify-between"
+          >
+            <div class="service-card p-3">
+              <Image
+                class="max-w-md h-[150px] lg:h-full lg:max-w-full"
+                src={Create}
+                alt="create"
+              />
+              <h4 class="pb-4 lg:pb-6">Start <br /> From Scratch</h4>
+            </div>
+            <div class="service-card p-3">
+              <Image
+                class="max-w-md lg:max-w-full h-[150px] lg:h-full"
+                src={Anna}
+                alt="create"
+              />
+              <h4 class="pb-4 lg:pb-6">
+                Create <br />
+                 With Anna
+              </h4>
+            </div>
+            <div class="service-card p-3">
+              <Image
+                class="max-w-md lg:max-w-full h-[150px] lg:h-full"
+                src={Template}
+                alt="create"
+              />
+              <h4 class="pb-4 lg:pb-6">Start <br /> With a Template</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <Testimonials client:visible />
+    </div>
+    <div class="lg:flex items-center justify-center flex-col my-12">
+      <h3
+        class="lg:text-[55px] text-center mb-6 text-gray-30 font-bold leading-[144%]"
+      >
+        Create your website quickly and easily <br /> with the new Setup Wizard.
+      </h3>
+      <p
+        class="lg:text-[24px] text-center leading-[145.6%] text-gray-10 !font-Manrope"
+      >
+        You can install prebuilt websites even more or create new project from
+        scratch by <br /> defining things like logos, colors, fonts, etc during
+        the installation process.
+      </p>
+    </div>
+
+    <div
+      class="bg-ash h-full min-h-screen flex items-center px-8 lg:px-0 flex-col-reverse lg:flex-row-reverse gap-x-16"
+    >
+      <div class="h-full">
+        <Image class="lg:max-w-xl" src={Group} alt="website" />
+      </div>
+      <div class="container mx-auto">
+        <div
+          class="container mx-auto grid lg:grid-cols-2 lg:gap-16 h-full lg:pl-24"
+        >
+          <div
+            class="flex items-center justify-center flex-col lg:items-start lg:justify-start"
+          >
+            <div
+              class="my-6 w-[87px] h-[87px] rounded-full bg-softPrimary flex items-center justify-center p-4"
+            >
+              <Image src={Timer} alt="timer" />
+            </div>
+
+            <h3 class="text-darkish text-[21px] mb-4 font-bold uppercase">
+              Daily Website Backups
+            </h3>
+            <p
+              class="text-gray-35 text-[15px] leading-[159.1%] text-center lg:text-justify !font-Manrope"
+            >
+              All your content and changes are safe with us! Our rock-solid
+              cloud servers take a daily backup of your data...giving you full
+              access to your website without any chance of losing vital
+              information.
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-center flex-col lg:items-start lg:justify-start"
+          >
+            <div
+              class="my-6 w-[87px] h-[87px] rounded-full bg-softPrimary flex items-center justify-center p-4"
+            >
+              <Image src={Tv} alt="tv" />
+            </div>
+            <h3 class="text-darkish text-[21px] mb-4 font-bold">
+              DEEP ANALYTICS & TRACKING
+            </h3>
+            <p
+              class="text-gray-35 text-[15px] leading-[159.1%] text-center lg:text-justify !font-Manrope"
+            >
+              We track your website to give you information that helps you grow.
+              Effortlessly find out about your website visits, views, users, top
+              performing products, real time traffic chart, revenue. Use all
+              these factors to make your site bigger and better
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-center flex-col lg:items-start lg:justify-start"
+          >
+            <div
+              class="my-6 w-[87px] h-[87px] rounded-full bg-softPrimary flex items-center justify-center p-4"
+            >
+              <Image src={HeadSet} alt="website" />
+            </div>
+            <h3 class="text-darkish text-[21px] mb-4 font-bold">
+              24X7 SUPPORT
+            </h3>
+            <p
+              class="text-gray-35 text-[15px] leading-[159.1%] text-center lg:text-justify !font-Manrope"
+            >
+              For anything that you may need, any questions or any support… our
+              team of experts are behind you 100% at any time!
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-center flex-col lg:items-start lg:justify-start"
+          >
+            <div
+              class="my-6 w-[87px] h-[87px] rounded-full bg-softPrimary flex items-center justify-center p-4"
+            >
+              <Image src={Play} alt="website" />
+            </div>
+            <h3 class="text-darkish text-[21px] mb-4 font-bold">
+              TRAINING & TUTORIALS
+            </h3>
+            <p
+              class="text-gray-35 text-[15px] leading-[159.1%] text-center lg:text-justify !font-Manrope"
+            >
+              Our web resource has been created to cater to all your needs and
+              make you self-sufficient. It is full of articles, videos and FAQs
+              that can get you instantly started and fix all your issues without
+              speaking to anyone
+            </p>
+          </div>
+        </div>
+
+        <!-- <div
+          class="w-[282.998px] p-2 h-[73.449px] rounded-full border border-[#696B7E] text-center flex items-center justify-center"
+        >
+          <a
+            class="text-[#696B7E] font-Manrope text-[18.762px] tracking-[-0.375px]"
+            href="/">See All Amazing Features</a
+          >
+        </div> -->
+      </div>
+    </div>
+    <div class="website-templates h-full min-h-screen pt-24">
+      <div class="flex items-center justify-center flex-col">
+        <h3
+          class="text-center text-4xl lg:text-[55px] font-bold leading-[134.5%] mb-6"
+        >
+          Website templates <br /> designed for your success.
+        </h3>
+        <p class="text-center text-xl lg:text-[25px]">
+          Easily customize your site with testimonials, scheduling, and more – <br
+          />
+          <span> no coding needed.</span>
+        </p>
+      </div>
+      <div class="sites h-96 lg:min-h-screen my-10 lg:container lg:mx-auto">
+      </div>
+    </div>
+    <div class="h-full py-24 lg:min-h-screen">
+      <div class="flex items-center justify-center flex-col">
+        <h3
+          class="text-center text-4xl lg:text-[47px] font-bold leading-[134.5%] mb-6"
+        >
+          Hundreds of thousands of customers <br /> worldwide have put their
+          trust in us.
+        </h3>
+        <p
+          class="text-center text-md lg:text-[24px] text-gray-10 !font-Manrope"
+        >
+          Our customers particularly valued the fact that we were always
+          attentive <br /> to their needs. A large number of customers can't all
+          be wrong.
+        </p>
+      </div>
+
+      <div class="bg-[#F6F6F7] py-2 my-10">
+        <CustomersSay client:load />
+      </div>
+    </div>
+
+    <div class="flex items-center flex-col lg:flex-row lg:justify-center my-5">
+      <div
+        class="get-started w-full max-w-[1200px] flex items-center lg:flex-row flex-col lg:rounded-[19.879px]"
+      >
+        <!-- Pattern -->
+        <div class="py-8 lg:py-10 lg:pl-20 h-full w-full lg:max-w-[661px] px-4">
+          <h3
+            class="text-darkish text-3xl lg:text-[32px] font-bold leading-[161.1%] my-4"
+          >
+            SmartBlocks: Is Your One-Stop Shop For Building STUNNING Websites
+            Using A.I
+          </h3>
+
+          <Button
+            class="w-[274px] h-[67px] mt-6 mb-6 bg-primary rounded-[8.41px] !text-white !font-Manrope"
+          >
+            Get Strated, It’s Free
+          </Button>
+          <p class="text-[#656565] lg:text-[20px] underline !font-Manrope">
+            No credit card required • <span class="text-primary">
+              See plans & pricing →</span
+            >
+          </p>
+        </div>
+        <div class="relative">
+          <Image
+            class="h-full lg:w-[590px] object-contain"
+            src={Pattern}
+            alt="pattern image"
+          />
+          <Image
+            class="h-[381px] lg:w-[500px] object-contain absolute top-24 lg:left-8"
+            src={Dashboard}
+            alt="pattern image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center flex-col my-6">
+      <div class="my-10">
+        <h3
+          class="text-4xl lg:text-[41px] text-darkish font-semibold my-4 font-Inter text-center"
+        >
+          Frequently asked questions
+        </h3>
+        <p class="text-[#667085] text-xl lg:text-[22px] font-Inter text-center">
+          Everything you need to know about the product and billing.
+        </p>
+      </div>
+      <Faq client:visible />
+
+      <div
+        class="flex items-center justify-center flex-col my-6 w-full max-w-[1200px]"
+      >
+        <div
+          class="bg-darkish lg:rounded-[18.138px] w-full py-16 lg:p-16 flex items-center justify-center flex-col"
+        >
+          <Image
+            class="w-[136.036px] h-[63.484px] mb-8"
+            src={Avatar}
+            alt="avatar group"
+          />
+          <p class="text-gray-25 lg:text-[22px] font-medium mb-4 font-Inter">
+            Still have questions?
+          </p>
+          <p class="text-white text-[20px] font-medium font-Inter text-center">
+            Can’t find the answer you’re looking for? <br
+              class="block lg:hidden"
+            /> Please chat to our friendly team.
+          </p>
+
+          <Button
+            class="py-[14px] px-[34.009px] mt-12 mb-6 bg-primary rounded-[8.41px] !text-white text-[18px] font-Inter"
+          >
+            Get in touch
+          </Button>
+        </div>
+      </div>
+    </div>
+  </main>
+</SiteLayout>

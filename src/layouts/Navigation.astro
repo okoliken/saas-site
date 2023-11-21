@@ -1,0 +1,61 @@
+---
+import Button from "../components/Button.astro";
+import Logo from "../components/Logo.astro";
+import MobileMenu from "../components/mobileMenu.vue";
+
+interface Link {
+  title: string;
+  url: string;
+}
+
+const links: Link[] = [
+  {
+    title: "Home",
+    url: "/",
+  },
+  {
+    title: "Features",
+    url: "/features",
+  },
+  {
+    title: "Pricing",
+    url: "/pricing",
+  },
+  {
+    title: "Contact Us",
+    url: "/contact-us",
+  },
+];
+---
+
+<nav
+  class="container mx-auto flex items-center
+    lg:justify-between lg:w-[1600px] px-6 lg:px-12 py-6 lg:py-5 md:my-4 bg-gray-5 lg:rounded-full"
+>
+  <div class="h-full">
+    <a href="/">
+      <Logo />
+    </a>
+  </div>
+
+  <ul class="lg:flex lg:items-center gap-x-10 hidden">
+    {
+      links.map((link) => (
+        <li>
+          <a
+            class="font-poppins text-[#808080] hover:text-primary"
+            href={link.url}
+          >
+            {link.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <Button class="w-[127px] smart-blok__btn h-[48.616px] hidden lg:block">
+    Sign In
+  </Button>
+
+  <!-- <MobileMenu client:load /> -->
+</nav>

@@ -1,0 +1,57 @@
+---
+import Logo from "../components/Logo.astro";
+import Subscribe from "../components/footer/subscribe.vue";
+const footerLinks = [
+  {
+    title: "Company",
+    content: ["About", "Features", "Pricing", "Contact Us"],
+  },
+  {
+    title: "Help",
+    content: [
+      "Customer Support",
+      "Delivery Details",
+      "Terms & Conditions",
+      "Privacy Policy",
+    ],
+  },
+];
+---
+
+<footer class="bg-[#F8F8F9] py-8 px-6 lg:py-14 lg:px-12">
+  <div
+    class="container mx-auto h-full lg:min-h-[502px] grid grid-cols-12 gap-y-12 lg:gap-x-24 place-content-center"
+  >
+    <div class="col-span-12  lg:col-span-4">
+      <Logo width="200"  height="32"/>
+
+      <p class="text-left text-[16px] leading-[26.5px] text-darkish my-8">
+        Smartblocks builder provides a complete solution, from enterprise-grade
+        infrastructure and business features to advanced SEO and marketing
+        tools, allowing anyone to create and grow online.
+      </p>
+    </div>
+    {
+      footerLinks.map((items) => (
+        <ul class="col-span-12 md:col-span-6 lg:col-span-2">
+          <p class="mb-6 text-darkish uppercase text-[16px] font-medium">
+            {items.title}
+          </p>
+          {items.content.map((item) => (
+            <li class="mb-8 text-[14px] font-medium hover:text-primary">
+              <a href="/">{item}</a>
+            </li>
+          ))}
+        </ul>
+      ))
+    }
+
+    <div class="col-span-12 lg:col-span-3">
+      <p class="mb-6 text-darkish uppercase text-[16px] font-medium">
+        Newsletter
+      </p>
+      <Subscribe client:visible />
+    </div>
+  </div>
+  <hr />
+</footer>

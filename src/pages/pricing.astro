@@ -1,0 +1,138 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import Button from "../components/Button.astro";
+import Plans from "../components/Pricing.vue";
+const subscription = [
+  {
+    type: "Personal",
+    price: "27",
+    isRecommend: false,
+  },
+  {
+    type: "Advanced",
+    price: "47",
+    isRecommend: true,
+  },
+  {
+    type: "Business",
+    price: "67",
+    isRecommend: false,
+  },
+];
+---
+
+<SiteLayout>
+  <div class="container mx-auto lg:mt-16 flex items-center flex-col gap-y-5">
+    <h1
+      class="text-4xl lg:text-[67.529px] text-center font-semibold leading-[135%]"
+    >
+      Choose A Plan
+    </h1>
+
+    <p
+      class="text-gray-25 text-center text-md lg:text-[24px] leading-[167%] capitalize font-light"
+    >
+      SmartBlocks gives you 100s of templates, unlimited pages & top grade
+      hosting <br /> FREE. Upgrade to Premium and get even more.
+    </p>
+
+    <div class="plan-chip text-center flex items-center justify-center my-4">
+      <p class="text-[#1E252B] font-Manrope text-[20px] leading-[156.1%]">
+        Pay by month or year, and cancel any time.
+      </p>
+    </div>
+
+    <div
+      class="border border-[#B6B6B6] rounded-full w-[207px] h-[53px] my-8 flex justify-between"
+    >
+      <p
+        class="w-[112px] h-[53px] bg-primary rounded-full p-4 text-white text-[14.904px] font-bold cursor-pointer"
+      >
+        MONTHLY
+      </p>
+      <p
+        class="w-[112px] h-[53px] p-4 text-[14.904px] font-bold cursor-pointer"
+      >
+        YEARLY
+      </p>
+    </div>
+  </div>
+
+  <div class="container mx-auto mt-12">
+    <div class="pricing">
+      <div class="flex flex-col lg:flex-row lg:justify-end w-full">
+        {
+          subscription.map((plans) => (
+            <div
+              class={
+                plans.isRecommend
+                  ? "bg-[#D9D9D933] p-12  text-center border-l border-[#B6B6B666] flex items-center justify-center flex-col relative"
+                  : "p-12 border-l border-[#B6B6B666] text-center flex items-center justify-center flex-col"
+              }
+            >
+              {plans.isRecommend ? (
+                <div
+                  class="absolute top-0 transform -translate-y-6 border w-[143.106px] h-[37.363px] 
+                rounded-full bg-white flex items-center justify-center
+                "
+                >
+                  <span> Most Popular</span>
+                </div>
+              ) : (
+                ""
+              )}
+
+              <p class="transform -translate-y-4 font-bold">{plans.type}</p>
+              <div class="flex items-center">
+                <span class="text-[32.664px] text-[#1E252B] transform -translate-y-6">
+                  $
+                </span>
+                <>
+                  <h3 class="text-[#1E252B] text-[78.394px] font-bold">
+                    {plans.price}
+                  </h3>
+                  <span class="transform translate-y-4 text-[#5C6A77]">
+                    /mo
+                  </span>
+                </>
+              </div>
+
+              <Button class="bg-primary w-[219px] h-[50px] rounded-full text-white">
+                Get Started
+              </Button>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <Plans client:visible />
+  </div>
+</SiteLayout>
+
+<style>
+  .plan-chip {
+    border-radius: 128.33px;
+    background: rgba(30, 37, 43, 0.08);
+    width: 470px;
+    height: 60px;
+  }
+
+  h1 {
+    background: linear-gradient(
+      90deg,
+      #1e252b 4.01%,
+      #fd801b 25.87%,
+      #071521 50.12%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .pricing {
+    border-radius: 20px 20px 0px 0px;
+    border-top: 1px solid rgba(182, 182, 182, 0.4);
+    border-left: 1px solid rgba(182, 182, 182, 0.4);
+    border-right: 1px solid rgba(182, 182, 182, 0.4);
+  }
+</style>

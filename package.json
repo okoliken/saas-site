@@ -1,0 +1,23 @@
+{
+  "name": "smartbloks",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.1",
+    "@astrojs/tailwind": "^5.0.2",
+    "@astrojs/vercel": "^5.2.0",
+    "@astrojs/vue": "^3.0.4",
+    "astro": "^3.5.3",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2",
+    "vue-collapsed": "^1.2.9",
+    "vue3-carousel": "^0.3.1"
+  }
+}

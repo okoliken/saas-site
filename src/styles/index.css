@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+body {
+  font-family: "Poppins", sans-serif !important;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
+}
+
+.hero-banner {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 25%,
+      rgba(250, 122, 18, 0.3) 68%,
+      #fb7c15 98%
+    ),
+    url("../assets/landing_page/hero.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top top;
+}
+
+.smart-blok-search {
+  border-radius: 76.658px;
+  border: 0.767px solid rgba(255, 255, 255, 0.13);
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(11.49864673614502px);
+}
+
+.smart-blok-search input {
+  width: 676.319px;
+  border-radius: 61.913px;
+  background: #fff;
+  height: 87.03px;
+}
+
+
+.publicity {
+border-radius: 9.642px;
+background: linear-gradient(271deg, rgba(253, 128, 27, 0.04) 0%, rgba(255, 236, 221, 0.30) 104.74%), #FFF;
+}
+
+
+.meet-anna{
+  border-radius: 19.879px;
+  border: 1px solid rgba(255, 255, 255, 0.60);
+  background: #000;
+  backdrop-filter: blur(9.939619064331055px);
+}
+
+
+.meet-anna h2 {
+  color: #787878;
+font-weight: 400;
+line-height: 157.5%;
+text-transform: capitalize;
+}
+
+.meet-anna .first-cha{
+  background: linear-gradient(90deg, #1E252B 16.98%, #FD801B 50.12%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-style: normal;
+font-weight: 700;
+}
+
+.meet-anna .second-cha{
+  background: linear-gradient(90deg, #1E252B 4.01%, #FD801B 49.16%, #FD801B 50.12%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  line-height: 157.5%;
+  text-transform: capitalize;
+}
+
+
+.steps{
+  border-radius: 19.879px;
+background: rgba(30, 37, 43, 0.06);
+backdrop-filter: blur(9.939619064331055px);
+
+}
+
+.all-features {
+  background: rgba(30, 37, 43, 0.06);
+backdrop-filter: blur(9.939619064331055px);
+background: url("../assets/features/Color-min.png"),url("../assets/features/Color-min.png"),url("../assets/features/Color-min.png"),;
+background-repeat: no-repeat ,no-repeat, no-repeat;
+  background-size:  61.823px,  61.823px, 61.823px;
+  background-position: bottom 2% right 4%, top left 5%, top right 5%;
+}
+
+.steps p, .all-features h2{
+background: linear-gradient(90deg, #1E252B 4.01%, #FD801B 25.87%, #1E252B 50.12%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.steps .service-card {
+  border-radius: 16.657px;
+background: #FAFAFA;
+height: 100%;
+}
+.steps .service-card h4{
+  color: #1E252B;
+text-align: center;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 33.313px; /* 151.423% */
+}
+
+.light-bg-primary{
+  background: rgba(253, 128, 27, 0.09);
+}
+
+/* .linear-shade{
+  background: rgba(253, 128, 27, 0.15);
+} */
+
+.meet-anna p {
+  color: #FFF;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 157.5%; /* 89.025px */
+}
+
+
+.website-templates{
+  min-height: 100vh;
+}
+
+.get-started{
+  background: url("../assets/landing_page/gradient-bg.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.smart-blok__btn{
+  background: linear-gradient(87.76deg, #1E252B 4.94%, #FD801B 59.01%, #1E252B 97.93%);
+  border-radius: 8px;
+  color:white;
+}
+
+.website-templates{
+  background: linear-gradient(180deg, #1E252B 2%, #FD801B 135.53%, rgba(30, 37, 43, 0.00) 135.1%);
+
+ 
+}
+
+.website-templates .sites{
+    background-image:  url('../assets/landing_page/webites-min.png');
+     background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.website-templates h3{
+  background: linear-gradient(90deg, #FFF 4.01%, #FD801B 25.87%, #FFF 50.12%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.website-templates p{
+  color: #787878;
+text-align: center;
+
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.website-templates span{
+  color: #E8E8E8;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.features {
+  background: url("../assets/features/Color-min.png"), url("../assets/features/HollowCube-min.png");
+  background-repeat: no-repeat ,no-repeat;
+  background-size:  61.823px,  61.823px;
+  background-position: bottom 2% right 4%, top left 5%;
+}
+
+.features h1 {
+  background: linear-gradient(90deg, #1E252B 3.85%, #FD801B 28.33%, #1E252B 54.47%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.features .outline-btn{
+  border-radius: 7.75px;
+border: 0.775px solid #1E252B;
+}
+/* rgba(250, 122, 18, 0.3) 100% */
+
+/* #FB7C15 */
+
+
+.integrations {
+background: #1B1E21;
+backdrop-filter: blur(9.939619064331055px);
+}
+
+.gradient{
+  background: linear-gradient(90deg, #1E252B 3.85%, #FD801B 28.33%, #1E252B 54.47%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gradient{
+  border: 0.922px solid #fff;
+  border-radius: 9.22px;
+}
+
+.carousel__slide {
+  padding: 5px;
+}
+
+.contact-us h3{
+  background: linear-gradient(90deg, #1E252B 4.01%, #FD801B 25.87%, rgba(30, 37, 43, 0.96) 50.12%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
