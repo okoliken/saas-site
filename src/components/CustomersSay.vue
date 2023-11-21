@@ -16,7 +16,7 @@
             <img
               class="w-[55.279px]"
               src="../assets/landing_page/love.png"
-              alt=""
+              alt="love"
             />
           </div>
         </div>

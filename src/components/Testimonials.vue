@@ -12,10 +12,11 @@
                 src="../assets/landing_page/avatar.png"
                 alt="avatar"
               />
+
               <img
                 class="w-[55.279px]"
                 src="../assets/landing_page/love.png"
-                alt=""
+                alt="love"
               />
             </div>
           </div>
@@ -72,7 +73,7 @@
               <img
                 class="w-[55.279px]"
                 src="../assets/landing_page/love.png"
-                alt=""
+                alt="love"
               />
             </div>
           </div>
