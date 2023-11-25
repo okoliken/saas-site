@@ -10,14 +10,10 @@
           >
             <img
               class="w-[55.279px]"
-              src="../assets/landing_page/avatar.png"
+              :src="getImageUrl('avatar')"
               alt="avatar"
             />
-            <img
-              class="w-[55.279px]"
-              src="../assets/landing_page/love.png"
-              alt="love"
-            />
+            <img class="w-[55.279px]" :src="getImageUrl('love')" alt="love" />
           </div>
         </div>
         <div class="bg-white z-20 relative rounded-[18.008px]">
@@ -79,8 +75,11 @@ const breakpoints = ref({
     snapAlign: "center",
   },
 });
-</script>
 
+function getImageUrl(name: string) {
+  return new URL(`../assets/landing_page/${name}.png`, import.meta.url).href;
+}
+</script>
 
 <style scoped>
 .card-shadow {

@@ -14,12 +14,12 @@
           >
             <img
               class="w-[55.279px]"
-              src="../assets/landing_page/avatar.png"
+              :src="getImageUrl('avatar')"
               alt="avatar"
             />
             <img
               class="w-[55.279px]"
-              src="../assets/landing_page/love.png"
+              :src="getImageUrl('love')"
               alt="love"
             />
           </div>
@@ -55,13 +55,11 @@
         ></div>
       </div>
     </Slide>
-    <Slide
-      class="w-full lg:w-[585.544px] h-[351.707px] pb-6"
-    >
+    <Slide class="w-full lg:w-[585.544px] h-[351.707px] pb-6">
       <div class="carousel__item lg:ml-8 transform translate-y-16">
         <img
           class="object-cover lg:w-[585.544px] h-[351.707px] rounded-[19.529px]"
-          src="../assets/landing_page/video.png"
+          :src="getImageUrl('video')"
           alt="image"
         />
       </div>
@@ -77,12 +75,12 @@
           >
             <img
               class="w-[55.279px]"
-              src="../assets/landing_page/avatar.png"
+              :src="getImageUrl('avatar')"
               alt="avatar"
             />
             <img
               class="w-[55.279px]"
-              src="../assets/landing_page/love.png"
+              :src="getImageUrl('love')"
               alt="love"
             />
           </div>
@@ -122,7 +120,7 @@
       <div class="carousel__item lg:ml-8 transform translate-y-16">
         <img
           class="object-cover lg:w-[585.544px] h-[351.707px] rounded-[19.529px]"
-          src="../assets/landing_page/video.png"
+          :src="getImageUrl('video')"
           alt="image"
         />
       </div>
@@ -157,6 +155,10 @@ const breakpoints = ref({
     snapAlign: "center",
   },
 });
+
+function getImageUrl(name: string) {
+  return new URL(`../assets/landing_page/${name}.png`, import.meta.url).href;
+}
 </script>
 
 <style scoped>
