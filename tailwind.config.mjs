@@ -22,7 +22,7 @@ export default {
 				softPrimary:"rgba(253, 128, 27, 0.12)",
 				ash:"rgba(30, 37, 43, 0.04)",
 				darkish:"#1E252B"
-			}
+			},
 		},
 	},
 	plugins: [],

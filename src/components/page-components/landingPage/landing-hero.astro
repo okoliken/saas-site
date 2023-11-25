@@ -1,0 +1,56 @@
+---
+import Button from "../../Button.astro";
+import Thunder from "../../icons/thunder.astro";
+import BrandIcon from "../../../assets/landing_page/Add.png";
+// @ts-ignore
+import { Image } from "astro:assets";
+
+---
+
+<div
+  class="hero-banner py-14 lg:py-0 lg:min-h-screen 2xl:min-h-[80vh] 2xl:py-20 h-full"
+>
+  <div
+    class="container mx-auto lg:mt-16 flex items-center justify-center 2xl:mt-0 flex-col gap-y-5"
+  >
+    <h1
+      class="text-3xl lg:text-[67.529px] text-center font-semibold lg:leading-[135%]"
+    >
+      Start Your Website <br class="hidden lg:block" /> Development Agency Using
+      A.I
+    </h1>
+
+    <p
+      class="text-gray-25 text-center text-md lg:text-[25px] lg:leading-[167%] capitalize font-light px-6 lg:px-0"
+    >
+      drag-n-drop website builder helps you create local business & <br
+        class="hidden lg:block"
+      />
+       proffesional websites using just a keyword!
+    </p>
+
+    <Button
+      class="w-[246px] mt-4 lg:mt-12 smart-blok__btn h-[50px] lg:h-[62px] flex items-center justify-center gap-x-3"
+    >
+      <Thunder />
+      <span>Build Your Website</span>
+    </Button>
+
+    <div class="w-full mx-4 lg:mx-0 max-w-[782px] lg:mt-20">
+      <div
+        class="flex items-center lg:gap-x-6 2xl:gap-x-0 smart-blok-search p-2 lg:p-3"
+      >
+        <Image
+          class="w-[100px] h-[60px] lg:h-[91px]"
+          src={BrandIcon}
+          alt="Brand Icon"
+        />
+        <input
+          class="px-6 lg:px-10 w-full lg:max-w-[676.319px] h-[65px] lg:h-[87.03px] outline-none appearance-none placeholder:text-[18.874px]"
+          type="text"
+          placeholder="What type of website do you want to create?"
+        />
+      </div>
+    </div>
+  </div>
+</div>

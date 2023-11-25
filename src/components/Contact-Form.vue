@@ -83,4 +83,34 @@ button {
     flex-shrink: 0;
   }
 }
+@media (min-width: 2560px) {
+  input {
+    width: 1000px;
+    height: 97.393px;
+    flex-shrink: 0;
+    border-radius: 16.397px 0px 16.397px 16.397px;
+    background: #efefef;
+  }
+
+  textarea {
+    width: 1000px;
+    height: 272.701px;
+    flex-shrink: 0;
+    border-radius: 16.397px 0px 16.397px 16.397px;
+    background: #efefef;
+  }
+
+  button {
+    border-radius: 10px;
+    background: linear-gradient(
+      90deg,
+      #1e252b 3.92%,
+      #fd801b 53.25%,
+      rgba(30, 37, 43, 0) 108%
+    );
+    width: 1000px;
+    height: 78px;
+    flex-shrink: 0;
+  }
+}
 </style>

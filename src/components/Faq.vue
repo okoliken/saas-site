@@ -23,7 +23,7 @@ function handleAccordion(selectedIndex: number) {
 </script>
 
 <template>
-  <article class="Wrapper w-full max-w-[870.632px] font-Inter px-10 lg:px-0">
+  <article class="Wrapper w-full lg:max-w-[870.632px] 2xl:max-w-[67rem] font-Inter px-10 lg:px-0">
     <div
       v-for="(question, index) in questions"
       :key="question.title"

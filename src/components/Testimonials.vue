@@ -1,28 +1,31 @@
 <template>
-  <Carousel :breakpoints="breakpoints" class="h-full lg:py-32">
+  <Carousel :breakpoints="breakpoints" :wrap-around="true" class="h-full lg:py-32">
     <Slide class="lg:w-[585.544px] mt-24 pb-6">
-      <div class="carousel__item lg:ml-8">
-        <div class="bg-white z-20 relative">
-          <div class="flex items-center justify-center">
-            <div
-              class="flex items-center gap-x-4 border rounded-[80.525px] w-[126.424px] p-1"
-            >
-              <img
-                class="w-[55.279px]"
-                src="../assets/landing_page/avatar.png"
-                alt="avatar"
-              />
-
-              <img
-                class="w-[55.279px]"
-                src="../assets/landing_page/love.png"
-                alt="love"
-              />
-            </div>
+      <div class="carousel__item lg:ml-8 relative">
+        <div
+          class="flex items-center justify-center relative z-50 transform translate-y-6"
+        >
+          <div
+            class="flex items-center gap-x-4 border rounded-[80.525px] w-[126.424px] p-1 bg-white"
+          >
+            <img
+              class="w-[55.279px]"
+              src="../assets/landing_page/avatar.png"
+              alt="avatar"
+            />
+            <img
+              class="w-[55.279px]"
+              src="../assets/landing_page/love.png"
+              alt="love"
+            />
           </div>
-          <div class="p-4 w-[505.128px] h-[333.15px] relative pt-12 px-6">
+        </div>
+        <div class="bg-white z-20 relative rounded-[18.008px]">
+          <div
+            class="p-4 w-full max-w-lg h-full lg:h-[333.15px] relative pt-10 px-6"
+          >
             <p
-              class="text-[#1E252B] text-[18.008px] leading-[32.13px] tracking-[-0.36px] font-Manrope text-justify"
+              class="text-[#1E252B] text-[18px] leading-[32.13px] tracking-[-0.36px] font-Manrope text-justify"
             >
               Igor started creating websites years ago, going on to learn coding
               and mastering his creativity to build websites for other
@@ -32,19 +35,19 @@
             </p>
 
             <div class="flex items-center gap-x-6 mt-6">
-              <p class="text-[24.31px] font-Manrope text-[#1E252B] font-bold">
-                Igvor .K
+              <p class="text-[24px] font-Manrope text-[#1E252B] font-bold">
+                Goody. Wilson
               </p>
               <p
-                class="text-[17.827px] font-light text-[#595F64] leading-[28.915px] tracking-[-0.36px]"
+                class="text-[17px] font-light text-[#595F64] leading-[28.915px] tracking-[-0.36px]"
               >
-                Senior Wordpress Developer
+                UI/UX Designer
               </p>
             </div>
           </div>
         </div>
         <div
-          class="hidden lg:block lg:w-[505.128px] h-[333.15px] rounded-[18.008px] absolute top-20 right-3 z-10 card-shadow"
+          class="hidden lg:block lg:w-[505px] h-[333px] rounded-[18.008px] absolute top-20 left-6 z-10 card-shadow"
         ></div>
       </div>
     </Slide>
@@ -59,27 +62,31 @@
     </Slide>
 
     <Slide class="lg:w-[585.544px] mt-24 pb-6 relative">
-      <div class="carousel__item lg:ml-8">
-        <div class="bg-white z-20 relative">
-          <div class="flex items-center justify-center">
-            <div
-              class="flex items-center gap-x-4 border rounded-[80.525px] w-[126.424px] p-1"
-            >
-              <img
-                class="w-[55.279px]"
-                src="../assets/landing_page/avatar.png"
-                alt="avatar"
-              />
-              <img
-                class="w-[55.279px]"
-                src="../assets/landing_page/love.png"
-                alt="love"
-              />
-            </div>
+      <div class="carousel__item lg:ml-8 relative">
+        <div
+          class="flex items-center justify-center relative z-50 transform translate-y-6"
+        >
+          <div
+            class="flex items-center gap-x-4 border rounded-[80.525px] w-[126.424px] p-1 bg-white"
+          >
+            <img
+              class="w-[55.279px]"
+              src="../assets/landing_page/avatar.png"
+              alt="avatar"
+            />
+            <img
+              class="w-[55.279px]"
+              src="../assets/landing_page/love.png"
+              alt="love"
+            />
           </div>
-          <div class="p-4 lg:w-[505.128px] h-[333.15px] relative pt-12 px-6">
+        </div>
+        <div class="bg-white z-20 relative rounded-[18.008px]">
+          <div
+            class="p-4 w-full max-w-lg h-full lg:h-[333.15px] relative pt-10 px-6"
+          >
             <p
-              class="text-[#1E252B] text-[18.008px] leading-[32.13px] tracking-[-0.36px] font-Manrope text-justify"
+              class="text-[#1E252B] text-[18px] leading-[32.13px] tracking-[-0.36px] font-Manrope text-justify"
             >
               Igor started creating websites years ago, going on to learn coding
               and mastering his creativity to build websites for other
@@ -89,19 +96,19 @@
             </p>
 
             <div class="flex items-center gap-x-6 mt-6">
-              <p class="text-[24.31px] font-Manrope text-[#1E252B] font-bold">
-                Igvor .K
+              <p class="text-[24px] font-Manrope text-[#1E252B] font-bold">
+                Goody. Wilson
               </p>
               <p
-                class="text-[17.827px] font-light text-[#595F64] leading-[28.915px] tracking-[-0.36px]"
+                class="text-[17px] font-light text-[#595F64] leading-[28.915px] tracking-[-0.36px]"
               >
-                Senior Wordpress Developer
+                UI/UX Designer
               </p>
             </div>
           </div>
         </div>
         <div
-          class="hidden lg:block lg:w-[505.128px] h-[333.15px] rounded-[18.008px] absolute top-20 right-3 z-10 card-shadow"
+          class="hidden lg:block lg:w-[505px] h-[333px] rounded-[18.008px] absolute top-20 left-6 z-10 card-shadow"
         ></div>
       </div>
     </Slide>
@@ -115,31 +122,34 @@
       </div>
     </Slide>
     <template #addons>
-      <Pagination />
+      <Pagination class="!mt-14" />
     </template>
   </Carousel>
 </template>
 
 <script setup lang="ts">
 import { Carousel, Slide, Pagination } from "vue3-carousel";
+
+// import { Image } from 'astro:assets'
+
 import "vue3-carousel/dist/carousel.css";
 import { ref } from "vue";
 
-const settings = ref({
-  itemsToShow: 1,
-  snapAlign: "center",
-});
 
 const breakpoints = ref({
   // 700px and up
   700: {
-    itemsToShow: 1,
+    itemsToShow: 2,
     snapAlign: "center",
   },
   // 1024 and up
   1024: {
     itemsToShow: 2.5,
-    snapAlign: "start",
+    snapAlign: "center",
+  },
+  2560: {
+    itemsToShow: 4.5,
+    snapAlign: "center",
   },
 });
 </script>

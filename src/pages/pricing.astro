@@ -2,6 +2,7 @@
 import SiteLayout from "../layouts/SiteLayout.astro";
 import Button from "../components/Button.astro";
 import Plans from "../components/Pricing.vue";
+import { plans, bookings, ecommerce } from "../utils/pricing";
 const subscription = [
   {
     type: "Personal",
@@ -22,7 +23,9 @@ const subscription = [
 ---
 
 <SiteLayout>
-  <div class="container mx-auto lg:mt-16 flex items-center flex-col gap-y-5">
+  <div
+    class="container pricing-bg mx-auto lg:mt-16 flex items-center flex-col gap-y-5"
+  >
     <h1
       class="text-4xl lg:text-[67.529px] text-center font-semibold leading-[135%]"
     >
@@ -30,7 +33,7 @@ const subscription = [
     </h1>
 
     <p
-      class="text-gray-25 text-center text-md lg:text-[24px] leading-[167%] capitalize font-light"
+      class="text-[#1E252B] text-center text-md lg:text-[24px] leading-[167%] capitalize font-light"
     >
       SmartBlocks gives you 100s of templates, unlimited pages & top grade
       hosting <br /> FREE. Upgrade to Premium and get even more.
@@ -66,13 +69,13 @@ const subscription = [
             <div
               class={
                 plans.isRecommend
-                  ? "bg-[#D9D9D933] p-12  text-center border-l border-[#B6B6B666] flex items-center justify-center flex-col relative"
-                  : "p-12 border-l border-[#B6B6B666] text-center flex items-center justify-center flex-col"
+                  ? "bg-[#D9D9D933] p-[3.123rem] 2xl:p-[5.1rem]  text-center border-l border-[#B6B6B666] flex items-center justify-center flex-col relative"
+                  : "p-[3.123rem] 2xl:p-[5.1rem] border-l border-[#B6B6B666] text-center flex items-center justify-center flex-col"
               }
             >
               {plans.isRecommend ? (
                 <div
-                  class="absolute top-0 transform -translate-y-6 border w-[143.106px] h-[37.363px] 
+                  class="absolute top-0 transform -translate-y-6 border border-[#1E252B] w-[143.106px] h-[37.363px] 
                 rounded-full bg-white flex items-center justify-center
                 "
                 >
@@ -105,7 +108,34 @@ const subscription = [
         }
       </div>
     </div>
-    <Plans client:visible />
+    <Plans plans={plans} client:only="vue" />
+
+    <div class="flex items-center justify-between py-12">
+      <div>
+        <h3 class="text-darkish text-[30px] mb-4">Ecommerce</h3>
+        <p class="text-[20px] text-primary">
+          Take bookings, paid bookings and sell tickets
+        </p>
+      </div>
+
+      <div>
+        <p class="text-primary text-[20px]">Hide Features</p>
+      </div>
+    </div>
+    <Plans plans={bookings} client:only="vue" />
+    <div class="flex items-center justify-between py-12">
+      <div>
+        <h3 class="text-darkish text-[30px] mb-4">Bookings</h3>
+        <p class="text-[20px] text-primary">
+          Take bookings, paid bookings and sell tickets
+        </p>
+      </div>
+
+      <div>
+        <p class="text-primary text-[20px]">Hide Features</p>
+      </div>
+    </div>
+    <Plans plans={ecommerce} client:only="vue" />
   </div>
 </SiteLayout>
 

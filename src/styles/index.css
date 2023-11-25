@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+html{
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif !important;
   font-family: 'Inter', sans-serif;
@@ -17,10 +23,9 @@ body {
     ),
     url("../assets/landing_page/hero.png");
   width: 100%;
-  height: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top top;
+  background-repeat: no-repeat no-repeat;
+  background-position: bottom  center;
 }
 
 .smart-blok-search {
@@ -31,10 +36,8 @@ body {
 }
 
 .smart-blok-search input {
-  width: 676.319px;
   border-radius: 61.913px;
   background: #fff;
-  height: 87.03px;
 }
 
 
@@ -152,16 +155,14 @@ line-height: 33.313px; /* 151.423% */
 }
 
 .website-templates{
-  background: linear-gradient(180deg, #1E252B 2%, #FD801B 135.53%, rgba(30, 37, 43, 0.00) 135.1%);
-
- 
+  background: linear-gradient(180deg, #1E252B 10%, #FD801B 150.53%, rgba(30, 37, 43, 0.00) 155.1%);
 }
 
 .website-templates .sites{
     background-image:  url('../assets/landing_page/webites-min.png');
-     background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  
 }
 
 .website-templates h3{
@@ -229,10 +230,21 @@ backdrop-filter: blur(9.939619064331055px);
 .carousel__slide {
   padding: 5px;
 }
+.carousel__viewport .carousel__track{
+  padding: 10px !important;
+}
 
 .contact-us h3{
   background: linear-gradient(90deg, #1E252B 4.01%, #FD801B 25.87%, rgba(30, 37, 43, 0.96) 50.12%);
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+}
+
+
+.pricing-bg {
+  background: url("../assets/pricing/widget.png"), url("../assets/pricing/chart.png"), url("../assets/pricing/line.png"), url("../assets/pricing/line2.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size:  136.459px  136.459px, 226.179px 136.459px, 90px  316px, 90px  416px;
+  background-position: top 25% left, top 55% right, bottom left, top -48% right 0%;
 }
