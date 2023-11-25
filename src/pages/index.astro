@@ -45,7 +45,7 @@ import SecondSection from "../components/page-components/landingPage/second-sect
     </div>
 
     <div
-      class="bg-ash h-full min-h-screen flex items-center px-8 lg:px-0 flex-col-reverse lg:flex-row-reverse gap-x-16"
+      class="bg-ash h-full lg:min-h-screen 2xl:min-h-full flex items-center px-8 lg:px-0 flex-col-reverse lg:flex-row-reverse gap-x-16"
     >
       <div class="h-full">
         <Image
@@ -54,7 +54,7 @@ import SecondSection from "../components/page-components/landingPage/second-sect
           alt="website"
         />
       </div>
-      <div class="container mx-auto py-24">
+      <div class="container mx-auto lg:py-24 2xl:py-0">
         <div
           class="container mx-auto grid lg:grid-cols-2 lg:gap-14 h-full lg:pl-24"
         >
@@ -66,7 +66,6 @@ import SecondSection from "../components/page-components/landingPage/second-sect
             >
               <Image src={Timer} alt="timer" />
             </div>
-
             <h3 class="text-darkish text-[21px] mb-4 font-bold uppercase">
               Daily Website Backups
             </h3>
@@ -150,7 +149,7 @@ import SecondSection from "../components/page-components/landingPage/second-sect
       </div>
     </div>
 
-    <div class="website-templates h-full lg:min-h-screen 2xl:min-h-full pt-24">
+    <div class="website-templates h-full lg:min-h-screen 2xl:min-h-0 pt-24">
       <div class="flex items-center justify-center flex-col">
         <h3
           class="text-center text-4xl lg:text-[55px] font-bold leading-[134.5%] mb-6"
@@ -164,7 +163,7 @@ import SecondSection from "../components/page-components/landingPage/second-sect
         </p>
       </div>
       <div
-        class="sites h-96 lg:h-full lg:min-h-screen my-10 lg:container lg:mx-auto bg-contain 2xl:bg-contain 2xl:min-h-[860px]"
+        class="sites h-96 lg:h-full lg:min-h-screen my-10 2xl:my-0 lg:container lg:mx-auto bg-contain 2xl:bg-contain 2xl:min-h-[960px]"
       >
       </div>
     </div>
@@ -246,7 +245,7 @@ import SecondSection from "../components/page-components/landingPage/second-sect
       <Faq client:visible />
 
       <div
-        class="flex items-center justify-center flex-col my-6 w-full lg:max-w-[1200px] 2xl:max-w-[87rem]"
+        class="flex items-center justify-center flex-col mb-16 w-full lg:max-w-[1200px] 2xl:max-w-[87rem]"
       >
         <div
           class="bg-darkish lg:rounded-[18.138px] w-full py-16 lg:p-16 flex items-center justify-center flex-col"

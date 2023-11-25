@@ -137,6 +137,37 @@ export const bookings: Plan[] = [
     options: ["_", "_", true],
   },
 ];
+
+export const bookingTools: Plan[] = [
+  {
+    title: "Unlimited blog posts",
+    options: [true, true, true],
+  },
+  {
+    title: "AI Intro writer",
+    options: ["_", true, true],
+  },
+  {
+    title: "AI Intro writer",
+    options: ["_", true, true],
+  },
+  {
+    title: "AI blog post writer",
+    options: ["_", true, true],
+  },
+  {
+    title: "Featured posts",
+    options: [true, true, true],
+  },
+  {
+    title: "Blog Analytics",
+    options: [true, true, true],
+  },
+  {
+    title: "Share your blog posts to social media",
+    options: [true, true, true],
+  },
+];
 export const ecommerce: Plan[] = [
   {
     title: "Unlimited stores",

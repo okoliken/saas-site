@@ -1,6 +1,7 @@
 ---
 import Button from "../../Button.astro";
 import Thunder from "../../icons/thunder.astro";
+import SearchInput from "../../search-input.vue"
 import BrandIcon from "../../../assets/landing_page/Add.png";
 // @ts-ignore
 import { Image } from "astro:assets";
@@ -45,11 +46,7 @@ import { Image } from "astro:assets";
           src={BrandIcon}
           alt="Brand Icon"
         />
-        <input
-          class="px-6 lg:px-10 w-full lg:max-w-[676.319px] h-[65px] lg:h-[87.03px] outline-none appearance-none placeholder:text-[18.874px]"
-          type="text"
-          placeholder="What type of website do you want to create?"
-        />
+       <SearchInput client:only="vue" />
       </div>
     </div>
   </div>

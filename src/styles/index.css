@@ -1,17 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
 
-html{
+:root {
+  --vc-clr-primary: #1e252b;
+  --vc-clr-secondary: #1e252b;
+  --vc-clr-white: #ffffff;
+  --vc-icn-width: 1.2em;
+  --vc-nav-width: 30px;
+  --vc-nav-height: 30px;
+  --vc-nav-border-radius: 0;
+  --vc-nav-color: var(--vc-clr-primary);
+  --vc-nav-color-hover: #fd801b;
+  --vc-nav-background: transparent;
+  --vc-pgn-width: 70px !important;
+  --vc-pgn-height: 4px;
+  --vc-pgn-margin: 4px;
+  --vc-pgn-border-radius: 5px !important;
+  --vc-pgn-background-color: var(--vc-clr-secondary);
+  --vc-pgn-active-color: #fd801b !important;
+}
+
+html {
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Poppins", sans-serif !important;
-  font-family: 'Inter', sans-serif;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .hero-banner {
@@ -25,7 +44,7 @@ body {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat no-repeat;
-  background-position: bottom  center;
+  background-position: bottom center;
 }
 
 .smart-blok-search {
@@ -40,39 +59,46 @@ body {
   background: #fff;
 }
 
-
 .publicity {
-border-radius: 9.642px;
-background: linear-gradient(271deg, rgba(253, 128, 27, 0.04) 0%, rgba(255, 236, 221, 0.30) 104.74%), #FFF;
+  border-radius: 9.642px;
+  background: linear-gradient(
+      271deg,
+      rgba(253, 128, 27, 0.04) 0%,
+      rgba(255, 236, 221, 0.3) 104.74%
+    ),
+    #fff;
 }
 
-
-.meet-anna{
+.meet-anna {
   border-radius: 19.879px;
-  border: 1px solid rgba(255, 255, 255, 0.60);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   background: #000;
   backdrop-filter: blur(9.939619064331055px);
 }
 
-
 .meet-anna h2 {
   color: #787878;
-font-weight: 400;
-line-height: 157.5%;
-text-transform: capitalize;
+  font-weight: 400;
+  line-height: 157.5%;
+  text-transform: capitalize;
 }
 
-.meet-anna .first-cha{
-  background: linear-gradient(90deg, #1E252B 16.98%, #FD801B 50.12%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-style: normal;
-font-weight: 700;
+.meet-anna .first-cha {
+  background: linear-gradient(90deg, #1e252b 16.98%, #fd801b 50.12%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: normal;
+  font-weight: 700;
 }
 
-.meet-anna .second-cha{
-  background: linear-gradient(90deg, #1E252B 4.01%, #FD801B 49.16%, #FD801B 50.12%);
+.meet-anna .second-cha {
+  background: linear-gradient(
+    90deg,
+    #1e252b 4.01%,
+    #fd801b 49.16%,
+    #fd801b 50.12%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -81,45 +107,53 @@ font-weight: 700;
   text-transform: capitalize;
 }
 
-
-.steps{
+.steps {
   border-radius: 19.879px;
-background: rgba(30, 37, 43, 0.06);
-backdrop-filter: blur(9.939619064331055px);
-
+  background: rgba(30, 37, 43, 0.06);
+  backdrop-filter: blur(9.939619064331055px);
 }
 
 .all-features {
-  background: rgba(30, 37, 43, 0.06);
-backdrop-filter: blur(9.939619064331055px);
-background: url("../assets/features/Color-min.png"),url("../assets/features/Color-min.png"),url("../assets/features/Color-min.png"),;
-background-repeat: no-repeat ,no-repeat, no-repeat;
-  background-size:  61.823px,  61.823px, 61.823px;
+  background: rgba(30, 37, 43, 0.06) !important;
+  position: relative;
+  z-index: -1;
+  backdrop-filter: blur(9.939619064331055px);
+  background: url("../assets/features/Color-min.png"),
+    url("../assets/features/Color-min.png"),
+    url("../assets/features/Color-min.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 61.823px, 61.823px, 61.823px;
   background-position: bottom 2% right 4%, top left 5%, top right 5%;
 }
 
-.steps p, .all-features h2{
-background: linear-gradient(90deg, #1E252B 4.01%, #FD801B 25.87%, #1E252B 50.12%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.steps p,
+.all-features h2 {
+  background: linear-gradient(
+    90deg,
+    #1e252b 4.01%,
+    #fd801b 25.87%,
+    #1e252b 50.12%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .steps .service-card {
   border-radius: 16.657px;
-background: #FAFAFA;
-height: 100%;
+  background: #fafafa;
+  height: 100%;
 }
-.steps .service-card h4{
-  color: #1E252B;
-text-align: center;
-font-size: 22px;
-font-style: normal;
-font-weight: 400;
-line-height: 33.313px; /* 151.423% */
+.steps .service-card h4 {
+  color: #1e252b;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33.313px; /* 151.423% */
 }
 
-.light-bg-primary{
+.light-bg-primary {
   background: rgba(253, 128, 27, 0.09);
 }
 
@@ -128,101 +162,132 @@ line-height: 33.313px; /* 151.423% */
 } */
 
 .meet-anna p {
-  color: #FFF;
+  color: #fff;
   font-style: normal;
   font-weight: 700;
   line-height: 157.5%; /* 89.025px */
 }
 
-
-.website-templates{
+.website-templates {
   min-height: 100vh;
 }
 
-.get-started{
+.get-started {
   background: url("../assets/landing_page/gradient-bg.png");
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+.plane-bg {
+  background:url("../assets/pricing/plane.png");
+  height: 590px;
+  width: 606px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
 
-
-.smart-blok__btn{
-  background: linear-gradient(87.76deg, #1E252B 4.94%, #FD801B 59.01%, #1E252B 97.93%);
+.smart-blok__btn {
+  background: linear-gradient(
+    87.76deg,
+    #1e252b 4.94%,
+    #fd801b 59.01%,
+    #1e252b 97.93%
+  );
   border-radius: 8px;
-  color:white;
+  color: white;
 }
 
-.website-templates{
-  background: linear-gradient(180deg, #1E252B 10%, #FD801B 150.53%, rgba(30, 37, 43, 0.00) 155.1%);
+.website-templates {
+  background: linear-gradient(
+    180deg,
+    #1e252b 10%,
+    #fd801b 150.53%,
+    rgba(30, 37, 43, 0) 155.1%
+  );
 }
 
-.website-templates .sites{
-    background-image:  url('../assets/landing_page/webites-min.png');
-    background-repeat: no-repeat;
-    background-position: bottom center;
-  
+.website-templates .sites {
+  background-image: url("../assets/landing_page/webites-min.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
 }
 
-.website-templates h3{
-  background: linear-gradient(90deg, #FFF 4.01%, #FD801B 25.87%, #FFF 50.12%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.website-templates h3 {
+  background: linear-gradient(90deg, #fff 4.01%, #fd801b 25.87%, #fff 50.12%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.website-templates p{
+.website-templates p {
   color: #787878;
-text-align: center;
+  text-align: center;
 
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.website-templates span{
-  color: #E8E8E8;
+.website-templates span {
+  color: #e8e8e8;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 .features {
-  background: url("../assets/features/Color-min.png"), url("../assets/features/HollowCube-min.png");
-  background-repeat: no-repeat ,no-repeat;
-  background-size:  61.823px,  61.823px;
+  background: url("../assets/features/Color-min.png"),
+    url("../assets/features/HollowCube-min.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 61.823px, 61.823px;
   background-position: bottom 2% right 4%, top left 5%;
 }
 
 .features h1 {
-  background: linear-gradient(90deg, #1E252B 3.85%, #FD801B 28.33%, #1E252B 54.47%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
-.features .outline-btn{
-  border-radius: 7.75px;
-border: 0.775px solid #1E252B;
-}
-/* rgba(250, 122, 18, 0.3) 100% */
-
-/* #FB7C15 */
-
-
-.integrations {
-background: #1B1E21;
-backdrop-filter: blur(9.939619064331055px);
-}
-
-.gradient{
-  background: linear-gradient(90deg, #1E252B 3.85%, #FD801B 28.33%, #1E252B 54.47%);
+  background: linear-gradient(
+    90deg,
+    #1e252b 3.85%,
+    #fd801b 28.33%,
+    #1e252b 54.47%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.border-gradient{
+.features .outline-btn {
+  border-radius: 7.75px;
+  border: 0.775px solid #1e252b;
+}
+/* rgba(250, 122, 18, 0.3) 100% */
+
+/* #FB7C15 */
+
+.integrations {
+  background: #1b1e21;
+  backdrop-filter: blur(9.939619064331055px);
+}
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    #1e252b 3.85%,
+    #fd801b 28.33%,
+    #1e252b 54.47%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text {
+  background: linear-gradient(269deg, rgba(253, 128, 27, 0.49) 7.18%, rgba(255, 61, 0, 0.60) 88.89%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.border-gradient {
   border: 0.922px solid #fff;
   border-radius: 9.22px;
 }
@@ -230,21 +295,29 @@ backdrop-filter: blur(9.939619064331055px);
 .carousel__slide {
   padding: 5px;
 }
-.carousel__viewport .carousel__track{
+.carousel__viewport .carousel__track {
   padding: 10px !important;
 }
 
-.contact-us h3{
-  background: linear-gradient(90deg, #1E252B 4.01%, #FD801B 25.87%, rgba(30, 37, 43, 0.96) 50.12%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.contact-us h3 {
+  background: linear-gradient(
+    90deg,
+    #1e252b 4.01%,
+    #fd801b 25.87%,
+    rgba(30, 37, 43, 0.96) 50.12%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-
 .pricing-bg {
-  background: url("../assets/pricing/widget.png"), url("../assets/pricing/chart.png"), url("../assets/pricing/line.png"), url("../assets/pricing/line2.png");
+  background: url("../assets/pricing/widget.png"),
+    url("../assets/pricing/chart.png"), url("../assets/pricing/line.png"),
+    url("../assets/pricing/line2.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size:  136.459px  136.459px, 226.179px 136.459px, 90px  316px, 90px  416px;
-  background-position: top 25% left, top 55% right, bottom left, top -48% right 0%;
+  background-size: 136.459px 136.459px, 226.179px 136.459px, 90px 316px,
+    90px 416px;
+  background-position: top 25% left, top 55% right, bottom left,
+    top -48% right 0%;
 }

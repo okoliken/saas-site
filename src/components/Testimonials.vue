@@ -1,6 +1,10 @@
 <template>
-  <Carousel :breakpoints="breakpoints" :wrap-around="true" class="h-full lg:py-32">
-    <Slide class="lg:w-[585.544px] mt-24 pb-6">
+  <Carousel
+    :breakpoints="breakpoints"
+    :wrapAround="true"
+    class="h-full lg:py-32"
+  >
+    <Slide class="lg:w-[585.544px] pb-6">
       <div class="carousel__item lg:ml-8 relative">
         <div
           class="flex items-center justify-center relative z-50 transform translate-y-6"
@@ -51,17 +55,19 @@
         ></div>
       </div>
     </Slide>
-    <Slide class="w-full lg:w-[585.544px] mt-24 pb-6">
-      <div class="carousel__item lg:ml-8">
+    <Slide
+      class="w-full lg:w-[585.544px] h-[351.707px] pb-6"
+    >
+      <div class="carousel__item lg:ml-8 transform translate-y-16">
         <img
-          class="object-cover"
+          class="object-cover lg:w-[585.544px] h-[351.707px] rounded-[19.529px]"
           src="../assets/landing_page/video.png"
           alt="image"
         />
       </div>
     </Slide>
 
-    <Slide class="lg:w-[585.544px] mt-24 pb-6 relative">
+    <Slide class="lg:w-[585.544px] pb-6 relative">
       <div class="carousel__item lg:ml-8 relative">
         <div
           class="flex items-center justify-center relative z-50 transform translate-y-6"
@@ -112,10 +118,10 @@
         ></div>
       </div>
     </Slide>
-    <Slide class="lg:w-[585.544px] mt-24 pb-6">
-      <div class="carousel__item lg:ml-8">
+    <Slide class="lg:w-[585.544px] h-[351.707px] pb-6">
+      <div class="carousel__item lg:ml-8 transform translate-y-16">
         <img
-          class="object-cover"
+          class="object-cover lg:w-[585.544px] h-[351.707px] rounded-[19.529px]"
           src="../assets/landing_page/video.png"
           alt="image"
         />
@@ -134,7 +140,6 @@ import { Carousel, Slide, Pagination } from "vue3-carousel";
 
 import "vue3-carousel/dist/carousel.css";
 import { ref } from "vue";
-
 
 const breakpoints = ref({
   // 700px and up

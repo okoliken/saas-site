@@ -5,7 +5,7 @@
         <tr v-for="(plan, index) in plans" :key="index">
           <td class="relative">
             <div class="flex items-center justify-between px-4">
-              <p class="text-[#1E252B] font-medium text-left">
+              <p class="text-[#1E252B] font-medium text-left leading-[14px]">
                 {{ plan.title }}
               </p>
               <div class="show-info cursor-pointer">

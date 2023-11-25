@@ -1,6 +1,6 @@
 <template>
   <Carousel :breakpoints="breakpoints" :wrap-around="true" class="h-full">
-    <Slide v-for="i in 3" :key="i" class="lg:w-[585.544px] w-full mb-24 py-6">
+    <Slide v-for="i in 3" :key="i" class="lg:w-[585.544px] w-full mb-24 !py-12">
       <div class="carousel__item lg:ml-8 relative">
         <div
           class="flex items-center justify-center relative z-50 transform translate-y-6"
@@ -81,10 +81,50 @@ const breakpoints = ref({
 });
 </script>
 
+
 <style scoped>
 .card-shadow {
   border-radius: 24.558px;
   border: 1.228px solid rgba(255, 255, 255, 0.36);
   background: rgba(253, 128, 27, 0.11);
+}
+.carousel__slide {
+  padding: 5px;
+}
+
+.carousel__viewport {
+  perspective: 2000px;
+}
+
+.carousel__track {
+  transform-style: preserve-3d;
+}
+
+.carousel__slide--sliding {
+  transition: 0.5s;
+}
+
+.carousel__slide {
+  opacity: 0.9;
+  transform: rotateY(-20deg) scale(0.9);
+}
+
+.carousel__slide--active ~ .carousel__slide {
+  transform: rotateY(20deg) scale(0.9);
+}
+
+.carousel__slide--prev {
+  opacity: 1;
+  transform: rotateY(-10deg) scale(0.95);
+}
+
+.carousel__slide--next {
+  opacity: 1;
+  transform: rotateY(10deg) scale(0.95);
+}
+
+.carousel__slide--active {
+  opacity: 1;
+  transform: rotateY(0) scale(1.1);
 }
 </style>

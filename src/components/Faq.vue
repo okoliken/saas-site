@@ -91,7 +91,7 @@ function handleAccordion(selectedIndex: number) {
 }
 
 .Wrapper {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .Section {
