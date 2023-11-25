@@ -85,8 +85,6 @@ td {
   height: 75px;
   border: 1px solid #b6b6b666;
   text-align: center;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
 
 .arrow {
