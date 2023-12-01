@@ -1,7 +1,6 @@
 <template>
   <input
-    class="px-6 lg:px-10 w-full lg:max-w-[676.319px] h-[65px] lg:h-[87.03px] 
-    outline-none appearance-none placeholder:text-[18.874px]"
+    class="px-6 lg:px-10 w-full lg:max-w-[44rem] h-[65px] lg:h-[4.6rem] outline-none appearance-none placeholder:text-[1.1rem] placeholder:font-light"
     type="text"
     id="input"
     placeholder=""
@@ -13,7 +12,6 @@ import { onMounted } from "vue";
 import Typewriter from "typewriter-effect/dist/core";
 
 let typewriter: any;
-
 
 onMounted(() => {
   var input = document.getElementById("input") as HTMLInputElement;

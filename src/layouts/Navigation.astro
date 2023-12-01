@@ -8,8 +8,6 @@ const currentPath = pathname.slice(1).includes("-")
   ? pathname.slice(1).split("-").join(" ")
   : pathname.slice(1);
 
-
-
 interface Link {
   title: string;
   url: string;
@@ -37,7 +35,7 @@ const links: Link[] = [
 
 <nav
   class="container mx-auto flex items-center w-full
-    lg:justify-between lg:w-[1600px] 2xl:max-w-[100rem] px-6 lg:px-12 py-6 lg:py-4 md:my-4 bg-gray-5 lg:rounded-full"
+    lg:justify-between lg:w-[100rem] xl:max-w-[85rem] px-6 lg:px-12 py-6 lg:py-3 md:my-4  lg:rounded-full sticky top-4 !z-50"
 >
   <div class="h-full">
     <a href="/">
@@ -65,9 +63,17 @@ const links: Link[] = [
     }
   </ul>
 
-  <Button class="w-[127px] smart-blok__btn h-[48.616px] hidden lg:block">
+  <Button class="w-[7.9375rem] smart-blok__btn h-[3rem] hidden lg:block">
     Sign In
   </Button>
 
   <!-- <MobileMenu client:load /> -->
 </nav>
+
+
+<style>
+  nav{
+    backdrop-filter: blur(15px);
+    background-color: rgba(30, 37, 43, 0.05);
+  }
+</style>

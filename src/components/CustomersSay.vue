@@ -1,5 +1,5 @@
 <template>
-  <Carousel :breakpoints="breakpoints" :wrap-around="true" class="h-full">
+  <Carousel :autoplay="2000" :snapAlign="'center'" :breakpoints="breakpoints" :wrap-around="true" class="h-full">
     <Slide v-for="i in 3" :key="i" class="lg:w-[585.544px] w-full mb-24 !py-12">
       <div class="carousel__item lg:ml-8 relative">
         <div

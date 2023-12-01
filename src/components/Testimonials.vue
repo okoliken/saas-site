@@ -2,6 +2,8 @@
   <Carousel
     :breakpoints="breakpoints"
     :wrapAround="true"
+    :autoplay="2000" 
+    :snapAlign="'center'"
     class="h-full lg:py-32"
   >
     <Slide class="lg:w-[585.544px] pb-6">

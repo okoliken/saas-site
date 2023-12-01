@@ -16,6 +16,11 @@ const footerLinks = [
     ],
   },
 ];
+
+const currentDate = new Date();
+
+// Get the current year from the Date object
+const currentYear = currentDate.getFullYear();
 ---
 
 <footer class="bg-[#F8F8F9] py-8 px-6 lg:py-14 lg:px-12">
@@ -56,4 +61,7 @@ const footerLinks = [
     </div>
   </div>
   <hr />
+  <p class="text-center mt-8">&copy; Copyright {currentYear} Smartbloks</p>
 </footer>
+
+

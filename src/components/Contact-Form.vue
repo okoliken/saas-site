@@ -4,14 +4,18 @@
       <div class="flex items-start flex-col mb-6">
         <label class="mb-4" for="email">Your email</label>
         <input
+          v-model="contact_support.email"
           class="px-6 outline-none"
           placeholder="Enter your email"
           type="text"
+          required
         />
       </div>
       <div class="flex items-start flex-col">
         <label class="mb-4" for="email">Your email</label>
         <textarea
+          v-model="contact_support.message"
+          required
           class="px-4 py-6 lg:px-6 lg:py-6 outline-none"
           placeholder="Enter an topic like “broken link”"
         ></textarea>
@@ -21,7 +25,52 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from "vue";
+
+const contact_support = ref({
+  email: "",
+  message: "",
+});
+
+function sendMessageToAPI(email: string, message: string) {
+  // API endpoint
+  const apiUrl = "https://api.smartbloks.ai/support/message";
+
+  // Request payload
+  const payload = {
+    email: email,
+    message: message,
+  };
+
+  // Fetch options
+  const requestOptions = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      // Add any additional headers if needed
+    },
+    body: JSON.stringify(payload),
+  };
+
+  // Send the POST request
+  fetch(apiUrl, requestOptions)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      // Handle the API response data
+      console.log("API Response:", data);
+    })
+    .catch((error) => {
+      // Handle errors during the request
+      console.error("Error:", error);
+    });
+}
+</script>
 
 <style scoped>
 input {
