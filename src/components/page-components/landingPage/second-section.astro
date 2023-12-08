@@ -64,7 +64,7 @@ import { Image } from "astro:assets";
     data-aos="fade-down"
     data-aos-duration="1500"
     class="meet-anna w-full lg:max-w-[1396px] 2xl:max-w-[120rem] min-h-[544px] my-10 px-12
-    lg:px-24 py-12 flex lg:flex-row items-center flex-col lg:justify-between"
+    lg:px-20 py-12 flex lg:flex-row items-center flex-col lg:justify-between"
   >
     <div data-aos="fade-left" data-aos-duration="1500" class="mb-7 lg:mb-0">
       <h2
@@ -93,9 +93,13 @@ import { Image } from "astro:assets";
         <span>See Anna In Action</span>
       </Button>
     </div>
-    <div data-aos="fade-right" data-aos-duration="1500" class="linear-shade">
+    <div
+      data-aos="fade-right"
+      data-aos-duration="1500"
+      class="linear-shade flex-1"
+    >
       <Image
-        class="w-full max-w-xs lg:w-[500px] lg:max-w-full lg:min-h-[500px]"
+        class="w-full object-cover lg:min-h-[500px]"
         src={Frame}
         alt="frame"
       />

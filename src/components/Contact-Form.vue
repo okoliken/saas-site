@@ -1,18 +1,22 @@
 <template>
   <div class="mt-12">
-    <form>
+    <form
+      @submit.prevent="
+        () => sendMessageToAPI(contact_support.email, contact_support.message)
+      "
+    >
       <div class="flex items-start flex-col mb-6">
         <label class="mb-4" for="email">Your email</label>
         <input
           v-model="contact_support.email"
           class="px-6 outline-none"
           placeholder="Enter your email"
-          type="text"
+          type="email"
           required
         />
       </div>
       <div class="flex items-start flex-col">
-        <label class="mb-4" for="email">Your email</label>
+        <label class="mb-4" for="email">Your message</label>
         <textarea
           v-model="contact_support.message"
           required
@@ -20,7 +24,7 @@
           placeholder="Enter an topic like “broken link”"
         ></textarea>
       </div>
-      <button class="mt-7 text-white">Submit</button>
+      <button type="submit" class="mt-7 text-white">Submit</button>
     </form>
   </div>
 </template>
